@@ -1,22 +1,12 @@
-# Git
 .git
 .gitignore
-
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-.venv/
-.pytest_cache/
-.ruff_cache/
-.coverage
-htmlcov/
-
-# Environment and Secrets
+.dockerignore
+__pycache__
+.venv
+.pytest_cache
+.ruff_cache
 .env
-.env.*
-
-# Build/Dist
-build/
-dist/
-*.egg-info/
+tests
+Dockerfile
+docker-compose*
+README.md
