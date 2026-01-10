@@ -1,22 +1,53 @@
-# Git
-.git
-.gitignore
-
-# Python
+# --- Python Base ---
 __pycache__/
 *.py[cod]
 *$py.class
-.venv/
-.pytest_cache/
-.ruff_cache/
-.coverage
-htmlcov/
+*.so
+.python-version
 
-# Environment and Secrets
+# --- Virtual Environments (uv/standard) ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Modern Tooling (Ruff & uv) ---
+.ruff_cache/
+.mypy_cache/
+.uv/
+# DO NOT ignore uv.lock; it's required for reproducible builds in apps
+
+# --- Security & Environment ---
 .env
 .env.*
+!.env.example
+secrets.json
+*.pem
+*.key
 
-# Build/Dist
-build/
-dist/
-*.egg-info/
+# --- Testing & Coverage (TDD) ---
+.pytest_cache/
+.coverage
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# --- Docker & Databases ---
+# Local database data
+pgdata/
+postgres_data/
+*.sqlite3
+
+# Docker logs and overrides
+*.log
+docker-compose.override.yml
+
+# --- IDEs & System ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
