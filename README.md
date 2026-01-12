@@ -1,3 +1,5 @@
+# *** WORK IN PROGRESS, EARLY STAGES ***
+### Created for learning purposes
 # 🛡️ GuardianAuth
 GuardianAuth is a high-performance Identity and Access Management (IAM) service. Built for the modern enterprise, it provides a secure foundation for user authentication, JWT-based authorization, and granular Role-Based Access Control (RBAC).
 
